@@ -20,7 +20,7 @@
     <code><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"></img></code>
 ## Vista previa del proyecto
 
-<img src="pr-progres/project-preview.gif" aling="center" ></img>
+<img src="pr-progres/project-preview.gif" aling="center" width="100%"></img>
 
 ## Estado del proyecto
 
