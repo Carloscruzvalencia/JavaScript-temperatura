@@ -6,20 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
-    <script src="assets/js/app.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav></nav>
-    </header>
     <main>
-
+        <input type="text" name="" id="temp-input">
+        <button onclick="temp()">send</button>
+        <input type="text" name="" id="temp-output">
+        <img id="temp-image" src="img/good.png" alt="">
     </main>
-    <footer>
+    <script>
+        function temp() {
+            // 1. obten el valor del input
+            input = document.getElementById("temp-input").value;
 
-    </footer>
+            // 2. pide el valor al input
+            output = document.getElementById("temp-output");
+
+            // 3. imprime el valor en el output
+            output.value = input;
+
+            if (input <= 0) {
+                document.getElementById("temp-image").src = "img/cold.png";
+            }
+            if (input >= 20) {
+                document.getElementById("temp-image").src = "img/good.png";
+            }
+            if (input >= 30) {
+                document.getElementById("temp-image").src = "img/hot.png";
+            }
+        }
+    </script>
 </body>
 
 </html>
