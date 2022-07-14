@@ -8,32 +8,29 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="temp()">
     <main>
-        <input type="text" name="" id="temp-input">
-        <button onclick="temp()">send</button>
         <input type="text" name="" id="temp-output">
-        <img id="temp-image" src="img/good.png" alt="">
+        <img id="temp-image" src="" alt="">
     </main>
     <script>
         function temp() {
             // 1. obten el valor del input
-            input = document.getElementById("temp-input").value;
-
-            // 2. pide el valor al input
-            output = document.getElementById("temp-output");
-
+            input = window.prompt("Ingrese la temperatura");
             // 3. imprime el valor en el output
-            output.value = input;
-
-            if (input <= 0) {
+            document.getElementById("temp-output").value = input;
+            if (input <= 15) {
                 document.getElementById("temp-image").src = "img/cold.png";
+                console.log("frio");
             }
-            if (input >= 20) {
+            if (input > 15) {
                 document.getElementById("temp-image").src = "img/good.png";
+                console.log("bien");
+
             }
             if (input >= 30) {
                 document.getElementById("temp-image").src = "img/hot.png";
+                console.log("calor");
             }
         }
     </script>
