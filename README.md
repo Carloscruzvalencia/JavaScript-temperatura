@@ -27,7 +27,7 @@
 |Trabajando en el proyecto|✔️|
 | -------------------------- | :----------------: |
 |            Web responsive  |      ❌        |
-|           Hosting          |    |
+|           Hosting          |   ❌ |
 | Websever app online        |         ❌    |  
 | Dispone de trello          |         ❌    |  
 <details open>
